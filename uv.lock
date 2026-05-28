@@ -878,6 +878,25 @@ wheels = [
 ]
 
 [[package]]
+name = "openai"
+version = "2.38.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "anyio" },
+    { name = "distro" },
+    { name = "httpx" },
+    { name = "jiter" },
+    { name = "pydantic" },
+    { name = "sniffio" },
+    { name = "tqdm" },
+    { name = "typing-extensions" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/8f/12/cfa322c5f5dd8fa21aab9a7a8e979e7a11123800f86ca8d82eb68a83d213/openai-2.38.0.tar.gz", hash = "sha256:798694c6cf74145541fda94325b6f8f72d8e1fd0262cc137c8d728177a6a4ce3", size = 772764, upload-time = "2026-05-21T21:23:42.105Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/0a/bf/ccff9be562e24207716d04ef9dc931c76aff0c89a7265da43e2104d7fe06/openai-2.38.0-py3-none-any.whl", hash = "sha256:ec6661c57b2dcc47414a767e6e3335c7ed3d19c9696999283a3c82e95c756a3c", size = 1344910, upload-time = "2026-05-21T21:23:39.636Z" },
+]
+
+[[package]]
 name = "packaging"
 version = "26.2"
 source = { registry = "https://pypi.org/simple" }
@@ -897,6 +916,7 @@ dependencies = [
     { name = "fastapi", extra = ["standard"] },
     { name = "faster-whisper" },
     { name = "ffmpeg-python" },
+    { name = "openai" },
     { name = "pydantic-settings" },
     { name = "python-dotenv" },
     { name = "pyttsx3" },
@@ -912,6 +932,7 @@ requires-dist = [
     { name = "fastapi", extras = ["standard"], specifier = ">=0.136.3" },
     { name = "faster-whisper", specifier = ">=1.2.1" },
     { name = "ffmpeg-python", specifier = ">=0.2.0" },
+    { name = "openai", specifier = ">=2.38.0" },
     { name = "pydantic-settings", specifier = ">=2.14.1" },
     { name = "python-dotenv", specifier = ">=1.2.2" },
     { name = "pyttsx3", specifier = ">=2.99" },
